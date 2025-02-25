@@ -21,7 +21,7 @@ function Booking() {
         </> );
     }else if(data.flag==="Flight"){
         return ( <>
-        <p>You're booking a {data.type} at </p>
+        <p>You're booking a <strong>{data.type} Class</strong> on the flight <strong>{data.name}</strong> for the low price of <strong>₹{data.price}/-</strong> </p>
         <p><img src={img} alt="QR for Payment was supposed to be here" className='qr'/>
         <button onClick={() => navigate("/")} className='homebutton'>Home here</button></p>
         </> );
