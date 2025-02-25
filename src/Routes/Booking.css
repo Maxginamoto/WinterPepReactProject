@@ -1,0 +1,23 @@
+.qr {
+    width: 40%;
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+.homebutton{
+    background-color: #007bff; /* Blue */
+  color: white;
+  padding: 8px 16px;
+  border: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px; /* Space between text and button */
+  margin-top: 5px; /* Space between text and button */
+  transition: 500ms;
+}
+
+.homebutton:hover {
+  background-color: #ffffff; /* Darker blue on hover */
+  border: #007bff;
+  color:#007bff;
+}

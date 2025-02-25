@@ -1,0 +1,64 @@
+/* Hotels.css */
+.hotel-list {
+    display: flex; /* Use flexbox for horizontal layout */
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    gap: 20px; /* Spacing between cards */
+    margin-top: 20px;
+    /* Optional: Center the cards horizontally */
+    justify-content: center; /* or flex-start, flex-end, space-around, etc. */
+  }
+  
+  .hotel-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 20px); /* Adjust width as needed (3 cards per row in this example) */
+    /* OR for fixed width, remove width property and use min-width */
+    /* min-width: 300px; */
+    flex-grow: 1; /* Allows cards to expand to fill available space */
+  }
+  
+  /* Media query for smaller screens (e.g., mobile) */
+  @media (max-width: 768px) {
+    .hotel-card {
+      width: calc(50% - 20px);  /* Two cards per row on smaller screens */
+    }
+  }
+  
+  @media (max-width: 500px) {
+      .hotel-card{
+          width: 100%; /* one card per row */
+      }
+  }
+  
+  
+  .hotel-card h3 {
+    margin-bottom: 10px;
+  }
+  
+  .hotel-card ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .hotel-card li {
+    margin-bottom: 5px;
+  }
+  .book-button {
+    background-color: #007bff; /* Blue */
+    color: white;
+    padding: 8px 16px;
+    border: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px; /* Space between text and button */
+    margin-top: 5px; /* Space between text and button */
+    transition: 1000ms;
+  }
+  
+  .book-button:hover {
+    background-color: #ffffff; /* Darker blue on hover */
+    border: #007bff;
+    color:#007bff;
+  }

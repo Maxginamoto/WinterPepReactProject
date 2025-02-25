@@ -1,0 +1,17 @@
+.book-button {
+  background-color: #007bff; /* Blue */
+  color: white;
+  padding: 8px 16px;
+  border: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px; /* Space between text and button */
+  margin-top: 5px; /* Space between text and button */
+  transition: 1000ms;
+}
+
+.book-button:hover {
+  background-color: #ffffff; /* Darker blue on hover */
+  border: #007bff;
+  color:#007bff;
+}
