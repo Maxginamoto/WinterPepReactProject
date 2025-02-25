@@ -78,13 +78,13 @@ const Flights = () => {
               <p><strong>Price:</strong></p>
                 <ul>
                   <li>
-                  Business Price: ₹{flight.price.business}
+                  Business Class: ₹{flight.price.business}
                     <button className="book-button" onClick={() => handleBooking(flight.FlightNumber, "Business", flight.price.business)}>
                       Book Economy
                      </button>
                   </li>
                   <li>
-                  Economy Price: ₹{flight.price.economy}
+                  Economy Class: ₹{flight.price.economy}
                     <button className="book-button" onClick={() => handleBooking(flight.FlightNumber, "Economy", flight.price.economy)}>
                       Book Business
                      </button>
